@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form action="POST" data-netlify="true">
+    <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
       <div class="form-control">
         <input id="name" type="text" name="name" placeholder="Name" />
       </div>
