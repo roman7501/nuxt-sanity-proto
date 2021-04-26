@@ -2,24 +2,23 @@
   <div>
     <Background />
     <div class="container">
-      <h1>Contact</h1>
+      <ContactForm />
     </div>
   </div>
 </template>
 
 <script>
 import Background from '../components/Background'
+import ContactForm from '../components/ContactForm'
 export default {
   components: {
     Background,
+    ContactForm,
   },
 }
 </script>
 
 <style scoped>
-.container {
-  color: rgb(16, 16, 167);
-}
 .bg {
   background-image: url('~assets/images/bg-6.jpg');
 }
