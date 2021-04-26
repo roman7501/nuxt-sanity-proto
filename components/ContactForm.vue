@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <form action="/success" data-netlify-recaptcha="true" data-netlify="true">
       <div class="form-control">
         <input id="name" type="text" name="name" placeholder="Name" />
       </div>
@@ -41,6 +41,7 @@ textarea {
   padding: 12px;
   border-radius: 20px;
   width: 100%;
+  color: #fff;
   &:hover {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -57,6 +58,7 @@ textarea::placeholder {
   background: #fff;
   transition: transform 0.3s;
   cursor: pointer;
+  color: #000;
   &:hover {
     transform: scale(1.05);
     background: #fff;
