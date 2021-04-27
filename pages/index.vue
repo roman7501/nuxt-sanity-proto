@@ -21,6 +21,6 @@ export default {
   color: #fff;
 }
 .bg {
-  background-image: url('~assets/images/bg-1.jpg');
+  background-image: url('assets/images/bg-1.jpg');
 }
 </style>

@@ -18,7 +18,7 @@ export default {
   top: 0;
   right: 0;
   background: rgba(74, 95, 255, 1);
-  transform: translateX(200%) scaleX(2);
+  transform: translateX(100%);
   /* transition: transform 1.5s; */
 }
 </style>
