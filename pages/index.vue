@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Background />
     <div class="container">
       <h1>Home</h1>
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   color: #fff;
 }

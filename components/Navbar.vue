@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navbar">
     <NuxtLink to="/">Home</NuxtLink>
     <NuxtLink to="/spectacles">Spectacles</NuxtLink>
     <NuxtLink to="/ateliers">Ateliers</NuxtLink>

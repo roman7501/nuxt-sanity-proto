@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Overlay />
     <Navbar />
     <Nuxt />
   </div>
@@ -7,9 +8,11 @@
 
 <script>
 import Navbar from '../components/Navbar'
+import Overlay from '../components/Overlay'
 export default {
   components: {
     Navbar,
+    Overlay,
   },
 }
 </script>
