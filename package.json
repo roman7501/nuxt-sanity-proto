@@ -11,6 +11,8 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@sanity/client": "^2.8.0",
+    "@sanity/image-url": "^0.140.22",
     "core-js": "^3.9.1",
     "gsap": "^3.6.1",
     "nuxt": "^2.15.3"

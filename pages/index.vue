@@ -9,6 +9,7 @@
 
 <script>
 import Background from '../components/Background'
+
 export default {
   components: {
     Background,
