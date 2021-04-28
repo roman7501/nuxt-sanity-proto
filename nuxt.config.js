@@ -27,19 +27,12 @@ export default {
   pageTransition: {
     name: 'home',
     mode: 'out-in',
-
-    // beforeLeave(el, done) {
-    //   console.log('Before leave...', el)
-    //   this.$gsap.to(el, { opacity: '0%', onComplete: done })
-    // },
-    // beforeEnter(el, done) {
-    //   console.log('Before enter...', el)
-    //   this.$gsap.to(el, { opacity: '0%', onComplete: done })
-    // },
-    // enter(el, done) {
-    //   console.log('Enter...')
-    //   this.$gsap.to(el, { opacity: '100%', onComplete: done })
-    // },
+    leave(el, done) {
+      this.$gsap.to('.overlay', {
+        x: '0%',
+        onComplete: done,
+      })
+    },
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

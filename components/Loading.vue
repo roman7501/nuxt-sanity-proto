@@ -1,7 +1,5 @@
 <template lang="html">
-  <div v-if="loading" class="loading-page">
-    <p>Loading...</p>
-  </div>
+  <div v-if="loading" class="loading-page"></div>
 </template>
 
 <script>
@@ -9,12 +7,10 @@ export default {
   data: () => ({
     loading: false,
   }),
+
   methods: {
     start() {
       this.loading = true
-      this.$gsap.to('.overlay', {
-        x: '0%',
-      })
     },
     finish() {
       setTimeout(() => {
@@ -22,7 +18,7 @@ export default {
         this.$gsap.to('.overlay', {
           x: '100%',
         })
-      }, 1000)
+      }, 1)
     },
   },
 }
