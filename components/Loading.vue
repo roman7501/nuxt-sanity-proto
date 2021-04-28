@@ -18,7 +18,7 @@ export default {
         this.$gsap.to('.overlay', {
           x: '100%',
         })
-      }, 1)
+      }, 1000)
     },
   },
 }
