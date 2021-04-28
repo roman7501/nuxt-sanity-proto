@@ -19,7 +19,7 @@ export default {
       default: 'Missing alternative text',
     },
     width: Number,
-    Height: Number,
+    height: Number,
     auto: {
       default: 'format',
       type: String,

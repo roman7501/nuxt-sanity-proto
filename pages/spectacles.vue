@@ -3,10 +3,13 @@
     <Background />
     <div class="container">
       <h1>Spectacles</h1>
-      <SanityImage :image="image" :width="120" :height="80" class="img" />
+      <SanityImage :image="image" :width="220" :height="100" class="img" />
       <h3>
         {{ title }}
       </h3>
+      <p>
+        {{ textDescription }}
+      </p>
     </div>
   </div>
 </template>
@@ -15,12 +18,13 @@
 import Background from '../components/Background'
 import sanityClient from '../sanityClient'
 import SanityImage from '../components/SanityImage'
+import blocksToText from '../lib/blocksToText'
 
 const query = `
   *[_type=="creations"]{
-    title, 
-    description, 
-    generique, 
+    title,
+    description,
+    generique,
     mainImage { ..., asset->},
     creationDate
 
@@ -34,9 +38,20 @@ export default {
   async asyncData() {
     const creations = await sanityClient.fetch(query)
     const title = creations[0].title
+    const description = creations[0].description
+    const textDescription = blocksToText(description)
     const image = await creations[0].mainImage
-    return { title, image }
+    return { title, image, textDescription }
   },
+  // data() {
+  //   return {
+  //     serializers: {
+  //       types: {
+  //         custom: CustomComponent,
+  //       },
+  //     },
+  //   }
+  // },
 }
 </script>
 

@@ -15,7 +15,8 @@
     "@sanity/image-url": "^0.140.22",
     "core-js": "^3.9.1",
     "gsap": "^3.6.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "sanity-blocks-vue-component": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
