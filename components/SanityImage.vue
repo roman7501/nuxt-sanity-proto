@@ -1,14 +1,19 @@
 <template>
-  <img :src="imageUrl" alt="image" />
+  <SingleImage :imageLocation="srcImage" />
 </template>
 
 <script>
 import imageUrlBuilder from '@sanity/image-url'
 import sanityClient from '../sanityClient'
+import SingleImage from '../components/SingleImage'
 
 const builder = imageUrlBuilder(sanityClient)
 
 export default {
+  components: {
+    SingleImage,
+  },
+
   props: {
     image: {
       type: Object,
@@ -28,6 +33,11 @@ export default {
       default: 'max',
       type: String,
     },
+  },
+  data() {
+    return {
+      srcImage: 'images/img2.jpg',
+    }
   },
   computed: {
     imageUrl() {

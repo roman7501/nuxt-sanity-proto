@@ -16,7 +16,7 @@ export default {
       setTimeout(() => {
         this.loading = false
         this.$gsap.to('.overlay', {
-          x: '100%',
+          x: '-100%',
         })
       }, 1000)
     },

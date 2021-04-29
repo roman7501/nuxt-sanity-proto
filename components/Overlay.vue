@@ -19,6 +19,7 @@ export default {
   right: 0;
   background: rgba(74, 95, 255, 1);
   transform: translateX(100%);
+  z-index: 100;
   /* transition: transform 1.5s; */
 }
 </style>
