@@ -1,5 +1,5 @@
 <template>
-  <SingleImage :imageLocation="srcImage" />
+  <SingleImage :imageLocal="imageUrl" />
 </template>
 
 <script>

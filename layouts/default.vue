@@ -42,6 +42,15 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:visited {
+  color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: center;

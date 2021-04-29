@@ -4,7 +4,7 @@
     <img
       v-show="isLoaded"
       class="single-img"
-      :src="require('@/assets/' + imageLocation + '')"
+      :src="imageLocal"
       @load="onImgLoad"
     />
   </div>
@@ -14,7 +14,7 @@
 export default {
   name: 'SingleImage',
   props: {
-    imageLocation: String,
+    imageLocal: Object,
   },
   data() {
     return {

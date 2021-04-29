@@ -3,22 +3,19 @@
     <Background />
     <div class="container">
       <h1>Ateliers</h1>
-      <SingleImage :imageLocation="srcImage" />
     </div>
   </div>
 </template>
 
 <script>
 import Background from '../components/Background'
-import SingleImage from '../components/SingleImage'
 export default {
   components: {
     Background,
-    SingleImage,
   },
   data() {
     return {
-      srcImage: 'images/img1.jpg',
+      srcImage: require('@/assets/images/img1.jpg'),
     }
   },
 }
